@@ -39,7 +39,7 @@ export default function Home() {
           muted
           loop
           playsInline
-          src="/videos/hero.mp4"
+          src={`${import.meta.env.BASE_URL}public/videos/hero.mp4`}
         />
         <div className="relative z-10 text-center">
           <h1 className="text-4xl md:text-5xl font-bold">Walk into a Blissful Marriage</h1>

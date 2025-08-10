@@ -1,13 +1,15 @@
 {
-  "name": "frontend",
+  "name": "007Phere",
   "private": true,
-  "version": "0.0.0",
   "type": "module",
+  "homepage": "https://code-mayor.github.io/007Phere",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build && cp dist/index.html dist/404.html",
+    "deploy": "gh-pages -d dist",
+    "lint": "eslint ."
   },
   "dependencies": {
     "@tailwindcss/postcss": "^4.1.11",
@@ -26,14 +28,14 @@
     "eslint": "^9.29.0",
     "eslint-plugin-react-hooks": "^5.2.0",
     "eslint-plugin-react-refresh": "^0.4.20",
+    "gh-pages": "^6.3.0",
     "globals": "^16.2.0",
     "postcss": "^8.5.6",
     "tailwindcss": "^3.4.3",
     "vite": "^7.0.0"
   },
-  "description": "This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.",
-  "main": "eslint.config.js",
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "description": "007Phere: Matrimonial Trust & Investigation Platform",
+  "author": "code-mayor",
+  "license": "ISC",
+  "keywords": []
 }
